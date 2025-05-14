@@ -51,7 +51,7 @@ jobs:
       # Build Docker Model
       - name: Build Docker Model
         run: |
-          mlflow models build-docker --model-uri "runs:/$RUN_ID/model" --name "smsml" 
+          mlflow models build-docker --model-uri "runs:/$RUN_ID/xgb_pipeline" --name "smsml" 
 
       # Login to Docker Hub
       - name: Log in to Docker Hub
