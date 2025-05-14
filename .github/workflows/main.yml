@@ -9,7 +9,7 @@ on:
       - main
 
 env:
-  CSV_URL: "Project/Sleep-health-and-lifestyle-dataset_preprocessing.csv"
+  CSV_URL: "Sleep-health-and-lifestyle-dataset_preprocessing.csv"
   TARGET_VAR: "Sleep Disorder"
 
 jobs:
