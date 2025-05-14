@@ -8,5 +8,5 @@ entry_points:
       n_estimators: {type: int, default: 144}
       max_depth: {type: int, default: 6}
       learning_rate: {type: float, default: 0.2226055605640655}
-      dataset: {type: string, default: "Sleep-health-and-lifestyle-dataset_raw.csv"}
+      dataset: {type: string, default: "Sleep-health-and-lifestyle-dataset_preprocessing.csv"}
     command: "python modelling.py {n_estimators} {max_depth} {learning_rate} {dataset}"
