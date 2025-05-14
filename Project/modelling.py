@@ -15,7 +15,7 @@ from sklearn.preprocessing import OneHotEncoder, RobustScaler
 import os
 import sys
 
-file_path = sys.argv[4] if len(sys.argv) > 3 else os.path.join(os.path.dirname(os.path.abspath(__file__)), "train_pca.csv")
+file_path = sys.argv[4] if len(sys.argv) > 3 else os.path.join(os.path.dirname(os.path.abspath(__file__)), "Sleep-health-and-lifestyle-dataset_preprocessing.csv")
 df = pd.read_csv(file_path)
 
 X = df.drop(columns=['Sleep Disorder'])
