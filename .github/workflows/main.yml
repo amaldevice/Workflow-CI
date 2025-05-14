@@ -10,7 +10,7 @@ on:
 
 env:
   CSV_URL: "Project/Sleep-health-and-lifestyle-dataset_preprocessing.csv"
-  TARGET_VAR: "Credit_Score"
+  TARGET_VAR: "Sleep Disorder"
 
 jobs:
   build:
@@ -39,7 +39,7 @@ jobs:
       # Run as a mlflow project
       - name: Run mlflow project
         run: |
-          mlflow run MLproject --env-manager=local 
+          mlflow run Project --env-manager=local 
       
       # Get latest run_id
       - name: Get latest MLflow run_id
